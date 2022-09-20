@@ -1,4 +1,4 @@
-#include"Header.h"
+ï»¿#include"Header.h"
 Interface::Interface()
 {
 	R = nullptr;
@@ -9,11 +9,11 @@ Interface::Interface(int _size) : size{ _size }, R{ new Reservoir[_size]}
 	for (int i = 0; i < size; i++)
 	{
 		double temp, temp2, temp3;
-		cout << "Ââåäèòå äëèíó: "; cin >> temp;
+		cout << "Ð’Ð²ÐµÐ´Ð¸Ñ‚Ðµ Ð´Ð»Ð¸Ð½Ñƒ: "; cin >> temp;
 		R[i].set_lenght(temp);
-		cout << "Ââåäèòå øèðèíó: "; cin >> temp2;
+		cout << "Ð’Ð²ÐµÐ´Ð¸Ñ‚Ðµ ÑˆÐ¸Ñ€Ð¸Ð½Ñƒ: "; cin >> temp2;
 		R[i].set_width(temp2);
-		cout << "Ââåäèòå ãëóáèíó: "; cin >> temp3;
+		cout << "Ð’Ð²ÐµÐ´Ð¸Ñ‚Ðµ Ð³Ð»ÑƒÐ±Ð¸Ð½Ñƒ: "; cin >> temp3;
 		R[i].set_depth(temp3);
 	}
 }
